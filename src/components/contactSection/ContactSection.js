@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PrimaryButton from '../buttons/PrimaryButton';
+// import PrimaryButton from '../buttons/PrimaryButton';
 import ParagraphText from '../paragraphTexts/ParagraphText';
 import SectionTitle from '../titles/SectionTitle';
 // import FormField from './FormField';
@@ -97,13 +97,7 @@ function ContactSection() {
               id="message"
               rows="6"
             /> */}
-            <PrimaryButton
-              type="submit"
-              buttonType="button"
-              className="contact__submit"
-            >
-              Send Message
-            </PrimaryButton>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
