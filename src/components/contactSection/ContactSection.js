@@ -71,22 +71,18 @@ function ContactSection() {
               Please include the details of the requested service.
             </ParagraphText>
           </div>
-          <form className="contact__form" name="contact" method="post">
+          <form className="contact__form" name="contact" method="POST">
+            <input type="hidden" name="contact" value="contact" />
+            <input type="text" name="name" placeholder="name" required />
+            <input type="email" name="email" placeholder="email" required />
             <input
-              type="hidden"
-              name="contact"
-              value="contact"
-              data-netlify="true"
-            />
-            <FormField
-              className="contact__field--fullWidth"
-              type="text"
-              label="Name"
-              name="name"
-              id="name"
+              type="message"
+              name="message"
+              placeholder="message"
               required
             />
-            <FormField
+
+            {/* <FormField
               className="contact__field--fullWidth"
               type="email"
               label="Email"
@@ -100,7 +96,7 @@ function ContactSection() {
               name="message"
               id="message"
               rows="6"
-            />
+            /> */}
             <PrimaryButton
               type="submit"
               buttonType="button"

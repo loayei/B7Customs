@@ -14,11 +14,11 @@
   </head>
 
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <FormField type="text"  name="name">
-      <FormField type="email" name="email">
-      <FormField name="message"></textarea>
- </form>
+    <form className="contact__form" name="contact" netlify-data="true">
+      <input type="hidden" name="name" />
+      <input type="hidden" name="email" />
+      <input type="hidden" name="message" />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
