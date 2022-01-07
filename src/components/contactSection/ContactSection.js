@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // import PrimaryButton from '../buttons/PrimaryButton';
 import ParagraphText from '../paragraphTexts/ParagraphText';
 import SectionTitle from '../titles/SectionTitle';
-// import FormField from './FormField';
+import FormField from './FormField';
 
 const ContactSectionStyles = styled.div`
   padding: 10rem 0;
@@ -71,10 +71,22 @@ function ContactSection() {
               Please include the details of the requested service.
             </ParagraphText>
           </div>
-          <form name="contact" action="/success" method="POST">
+          <form
+            className="contact__form"
+            name="contact"
+            action="/success"
+            method="POST"
+          >
             <input type="hidden" name="form-name" value="contact" />
             <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
+            <FormField
+              className="contact__field--fullWidth"
+              type="email"
+              label="Email"
+              name="email"
+              id="email"
+              required
+            />
             <input
               type="message"
               name="message"
