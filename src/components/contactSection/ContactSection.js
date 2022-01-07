@@ -77,6 +77,7 @@ function ContactSection() {
             action="/success"
             method="POST"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <FormField
               className="contact__field--fullWidth"
               type="text"
