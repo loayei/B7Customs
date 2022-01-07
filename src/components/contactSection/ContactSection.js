@@ -40,27 +40,6 @@ const ContactSectionStyles = styled.div`
 `;
 
 function ContactSection() {
-  // const [status, setStatus] = useState('Submit');
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setStatus('Sending...');
-  //   const { name, email, message } = e.target.elements;
-  //   const details = {
-  //     name: name.value,
-  //     email: email.value,
-  //     message: message.value,
-  //   };
-  //   const response = await fetch('http://localhost:3000/contact', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json;charset=utf-8',
-  //     },
-  //     body: JSON.stringify(details),
-  //   });
-  //   setStatus('Submit');
-  //   const result = await response.json();
-  //   alert(result.status);
-  // };
   return (
     <ContactSectionStyles id="contact">
       <div className="container">
@@ -97,7 +76,7 @@ function ContactSection() {
             <FormField
               className="contact__field--fullWidth"
               type="text"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="[0-9]*"
               label="number"
               name="number"
               id="number"
