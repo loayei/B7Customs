@@ -74,8 +74,8 @@ function ContactSection() {
           <form
             className="contact__form"
             name="contact"
-            action="/success"
             method="POST"
+            data-netlify="true"
           >
             <input type="hidden" name="form-name" value="contact" />
             <FormField
