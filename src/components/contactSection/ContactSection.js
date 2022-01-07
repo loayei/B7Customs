@@ -96,6 +96,15 @@ function ContactSection() {
             />
             <FormField
               className="contact__field--fullWidth"
+              type="text"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              label="number"
+              name="number"
+              id="number"
+              required
+            />
+            <FormField
+              className="contact__field--fullWidth"
               label="Message"
               name="message"
               id="message"
