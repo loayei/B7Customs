@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import PrimaryButton from '../buttons/PrimaryButton';
+import PrimaryButton from '../buttons/PrimaryButton';
 import ParagraphText from '../paragraphTexts/ParagraphText';
 import SectionTitle from '../titles/SectionTitle';
 import FormField from './FormField';
@@ -77,24 +77,15 @@ function ContactSection() {
             action="/success"
             method="POST"
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="name" placeholder="Name" required />
             <FormField
               className="contact__field--fullWidth"
-              type="email"
-              label="Email"
-              name="email"
-              id="email"
+              type="text"
+              label="name"
+              name="name"
+              id="name"
               required
             />
-            <input
-              type="message"
-              name="message"
-              placeholder="Message"
-              required
-            />
-
-            {/* <FormField
+            <FormField
               className="contact__field--fullWidth"
               type="email"
               label="Email"
@@ -108,8 +99,14 @@ function ContactSection() {
               name="message"
               id="message"
               rows="6"
-            /> */}
-            <button type="submit">Send Message</button>
+            />
+            <PrimaryButton
+              type="submit"
+              buttonType="button"
+              className="contact__submit"
+            >
+              Submit
+            </PrimaryButton>
           </form>
         </div>
       </div>
