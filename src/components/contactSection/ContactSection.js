@@ -72,7 +72,12 @@ function ContactSection() {
             </ParagraphText>
           </div>
           <form className="contact__form" name="contact" method="post">
-            <input type="hidden" name="contact" value="contact" />
+            <input
+              type="hidden"
+              name="contact"
+              value="contact"
+              data-netlify="true"
+            />
             <FormField
               className="contact__field--fullWidth"
               type="text"
