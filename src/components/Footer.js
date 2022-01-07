@@ -63,6 +63,7 @@ function Footer() {
           <ParagraphText className="footer__desc">
             8 Hammond Ste 105, Irvine, CA 92618
           </ParagraphText>
+          <ParagraphText className="footer__desc">424-222-4441</ParagraphText>
           <div className="footer__links">
             <ul>
               <li>
