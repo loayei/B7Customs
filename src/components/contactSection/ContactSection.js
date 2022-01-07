@@ -71,14 +71,14 @@ function ContactSection() {
               Please include the details of the requested service.
             </ParagraphText>
           </div>
-          <form className="contact__form" name="contact" method="POST">
+          <form name="contact" action="/success" method="POST">
             <input type="hidden" name="contact" value="contact" />
-            <input type="text" name="name" placeholder="name" required />
-            <input type="email" name="email" placeholder="email" required />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
             <input
               type="message"
               name="message"
-              placeholder="message"
+              placeholder="Message"
               required
             />
 
