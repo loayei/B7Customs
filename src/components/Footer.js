@@ -61,10 +61,6 @@ function Footer() {
             <Logo className="footer__logo" />
           </Link>
           <ParagraphText className="footer__desc">
-            "B7 Customs" is a studio of some passionate photographer. Our Goal
-            is to capture your experience.
-          </ParagraphText>
-          <ParagraphText className="footer__desc">
             8 Hammond Ste 105, Irvine, CA 92618
           </ParagraphText>
           <div className="footer__links">
