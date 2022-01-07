@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PrimaryButton from '../buttons/PrimaryButton';
 import ParagraphText from '../paragraphTexts/ParagraphText';
@@ -15,11 +15,6 @@ const ContactSectionStyles = styled.div`
   .contact__info {
     margin-bottom: 4rem;
   }
-  .file-upload {
-    display: block;
-    text-align: center;
-    color: #e4622e;
-  }
   .contact__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +26,6 @@ const ContactSectionStyles = styled.div`
     .contact__submit {
       width: max-content;
       cursor: pointer;
-      margin-left: 25rem;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -45,30 +39,28 @@ const ContactSectionStyles = styled.div`
   }
 `;
 
-// function ContactSection =
-// () => {
-// const [status, setStatus] = useState('Submit');
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   setStatus('Sending...');
-//   const { name, email, message } = e.target.elements;
-//   const details = {
-//     name: name.value,
-//     email: email.value,
-//     message: message.value,
-//   };
-//   const response = await fetch('http://localhost:3000/contact', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json;charset=utf-8',
-//     },
-//     body: JSON.stringify(details),
-//   });
-//   setStatus('Submit');
-//   const result = await response.json();
-//   alert(result.status);
-// };
-function ContactSection() {
+const ContactSection = () => {
+  const [status, setStatus] = useState('Submit');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    const { name, email, message } = e.target.elements;
+    const details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    const response = await fetch('http://localhost:3000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus('Submit');
+    const result = await response.json();
+    alert(result.status);
+  };
   return (
     <ContactSectionStyles id="contact">
       <div className="container">
@@ -79,7 +71,7 @@ function ContactSection() {
               Please include the details of the requested service.
             </ParagraphText>
           </div>
-          <form className="contact__form" action="POST" data-netlify="true">
+          <form className="contact__form" onSubmit={handleSubmit}>
             <FormField
               className="contact__field--fullWidth"
               type="text"
@@ -103,27 +95,18 @@ function ContactSection() {
               id="message"
               rows="6"
             />
-            <input
-              className="file-upload"
-              type="file"
-              label="Message"
-              name="myfile"
-              id="myfile"
-              placeholder="Upload File"
-              rows="6"
-            />
             <PrimaryButton
               type="submit"
               buttonType="button"
               className="contact__submit"
             >
-              Send Message
+              {status}
             </PrimaryButton>
           </form>
         </div>
       </div>
     </ContactSectionStyles>
   );
-}
+};
 
 export default ContactSection;
