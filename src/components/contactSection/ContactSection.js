@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PrimaryButton from '../buttons/PrimaryButton';
 import ParagraphText from '../paragraphTexts/ParagraphText';
@@ -39,28 +39,28 @@ const ContactSectionStyles = styled.div`
   }
 `;
 
-const ContactSection = () => {
-  const [status, setStatus] = useState('Submit');
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-    const { name, email, message } = e.target.elements;
-    const details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    const response = await fetch('http://localhost:3000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus('Submit');
-    const result = await response.json();
-    alert(result.status);
-  };
+function ContactSection() {
+  // const [status, setStatus] = useState('Submit');
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus('Sending...');
+  //   const { name, email, message } = e.target.elements;
+  //   const details = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   const response = await fetch('http://localhost:3000/contact', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json;charset=utf-8',
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
+  //   setStatus('Submit');
+  //   const result = await response.json();
+  //   alert(result.status);
+  // };
   return (
     <ContactSectionStyles id="contact">
       <div className="container">
@@ -71,7 +71,8 @@ const ContactSection = () => {
               Please include the details of the requested service.
             </ParagraphText>
           </div>
-          <form className="contact__form" onSubmit={handleSubmit}>
+          <form className="contact__form" name="contact" method="post">
+            <input type="hidden" name="contact" value="contact" />
             <FormField
               className="contact__field--fullWidth"
               type="text"
@@ -100,13 +101,13 @@ const ContactSection = () => {
               buttonType="button"
               className="contact__submit"
             >
-              {status}
+              Send Message
             </PrimaryButton>
           </form>
         </div>
       </div>
     </ContactSectionStyles>
   );
-};
+}
 
 export default ContactSection;
