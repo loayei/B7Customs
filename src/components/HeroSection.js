@@ -72,7 +72,7 @@ function HeroSection() {
             </PrimaryButton>
           </div>
           <div className="hero__img">
-            <img src={HeroImg} alt="Artistic" />
+            <img src={HeroImg} alt="B7 Customs" />
           </div>
         </div>
       </div>

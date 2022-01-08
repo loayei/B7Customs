@@ -53,9 +53,7 @@ function TeamSection() {
         <div className="team__wrapper">
           <div className="team__info">
             <ParagraphText className="team__subtitle">B7 Team</ParagraphText>
-            <SectionTitle className="team__title">
-              The best team available
-            </SectionTitle>
+            <SectionTitle className="team__title">The Team</SectionTitle>
           </div>
           <div className="team__members">
             <TeamMemberItem img={teamMember1} name="Louie" />
