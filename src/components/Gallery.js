@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from './titles/SectionTitle';
-import AboutImg from '../assets/images/tesla_01.jpeg';
-import AboutImg1 from '../assets/images/tesla_02.jpeg';
-import AboutImg2 from '../assets/images/tesla_03.jpeg';
+import AboutImg from '../assets/images/merc1.jpg';
+import AboutImg1 from '../assets/images/merc2.jpg';
+import AboutImg2 from '../assets/images/merc3.jpg';
+import AboutImg3 from '../assets/images/merc4.jpg';
+import AboutImg4 from '../assets/images/merc5.jpg';
+import AboutImg5 from '../assets/images/merc6.jpg';
 
 const AboutStyles = styled.div`
   padding: 10rem 0;
@@ -46,9 +49,9 @@ function Gallery() {
             <img src={AboutImg} alt="B7 Customs" className="stretchy" />
             <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
             <img src={AboutImg2} alt="B7 Customs" className="stretchy" />
-            <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
-            <img src={AboutImg2} alt="B7 Customs" className="stretchy" />
-            <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg3} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg4} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg5} alt="B7 Customs" className="stretchy" />
           </div>
         </div>
       </div>
