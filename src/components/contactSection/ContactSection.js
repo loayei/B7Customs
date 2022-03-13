@@ -45,7 +45,7 @@ function ContactSection() {
       <div className="container">
         <div className="contact__wrapper">
           <div className="contact__info">
-            <SectionTitle>Contact Qoute Form</SectionTitle>
+            <SectionTitle>Contact Quote Form</SectionTitle>
             <ParagraphText>
               Please include the details of the requested service.
             </ParagraphText>
