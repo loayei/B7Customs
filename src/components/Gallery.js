@@ -44,9 +44,12 @@ function Gallery() {
         </div>
         <div className="about__wrapper">
           <div className="about__img">
-            <img src={AboutImg} alt="Artistic" className="stretchy" />
-            <img src={AboutImg1} alt="Artistic" className="stretchy" />
-            <img src={AboutImg2} alt="Artistic" className="stretchy" />
+            <img src={AboutImg} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg2} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg2} alt="B7 Customs" className="stretchy" />
+            <img src={AboutImg1} alt="B7 Customs" className="stretchy" />
           </div>
         </div>
       </div>
