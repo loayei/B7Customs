@@ -13,7 +13,6 @@ const AboutStyles = styled.div`
     justify-content: center;
   }
   .about__title {
-    margin-left: 4rem;
     margin-bottom: 7rem;
     text-align: center;
   }
