@@ -68,7 +68,7 @@ function HeroSection() {
               to="contact"
               className="hero__cta"
             >
-              Get In Touch For A Free Qoute
+              Get In Touch For A Free Quote
             </PrimaryButton>
           </div>
           <div className="hero__img">
