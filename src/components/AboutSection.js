@@ -54,8 +54,9 @@ function AboutSection() {
               “B7 Customs” is a studio of some passionate automotive
             </SectionTitle>
             <ParagraphText className="about__desc">
-              Our goal is to provide quality customer service. We specialize in Vinyl wraps, 
-              Paint Protection films, Car Tints, Car Modifications, Brake Caliper Painting, and Exhaust Systems.
+              Our goal is to provide quality customer service. We specialize in 
+              Vinyl wraps, Paint Protection films, Car Tints, Car Modifications,
+              Brake Caliper Painting, and Exhaust Systems.
             </ParagraphText>
           </div>
         </div>
