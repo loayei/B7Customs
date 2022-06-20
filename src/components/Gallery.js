@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import SectionTitle from "./titles/SectionTitle";
-import AboutImg from "../assets/images/tesla_11.jpeg";
-import AboutImg1 from "../assets/images/SP.jpg";
-import AboutImg2 from "../assets/images/gt3.jpg";
-import AboutImg3 from "../assets/images/imkay.jpg";
-import AboutImg4 from "../assets/images/svr.jpg";
-import AboutImg5 from "../assets/images/V4.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import SectionTitle from './titles/SectionTitle';
+import AboutImg from '../assets/images/tesla_11.jpeg';
+import AboutImg1 from '../assets/images/SP.jpg';
+import AboutImg2 from '../assets/images/gt3.jpg';
+import AboutImg3 from '../assets/images/imkay.jpg';
+import AboutImg4 from '../assets/images/svr.jpg';
+import AboutImg5 from '../assets/images/V4.jpg';
 
 const AboutStyles = styled.div`
   padding: 10rem 0;

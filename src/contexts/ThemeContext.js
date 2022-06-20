@@ -1,5 +1,5 @@
-import { createContext, useReducer } from "react";
-import themeList from "../data/themeList";
+import { createContext, useReducer } from 'react';
+import themeList from '../data/themeList';
 
 const ThemeContext = createContext();
 const lightTheme = themeList.light;
@@ -7,9 +7,9 @@ const darkTheme = themeList.dark;
 
 const themeReducer = (state, action) => {
   switch (action.type) {
-    case "TOGGLE_THEME":
+    case 'TOGGLE_THEME':
       localStorage.setItem(
-        "theme",
+        'theme',
         state.theme === lightTheme ? darkTheme : lightTheme
       );
       return {
@@ -22,10 +22,10 @@ const themeReducer = (state, action) => {
 
 const ThemeContextProvider = ({ children }) => {
   const getInitialTheme = () => {
-    const theme = localStorage.getItem("theme");
+    const theme = localStorage.getItem('theme');
     const prefersDark =
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (theme) {
       return theme;
     }
@@ -44,7 +44,7 @@ const ThemeContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(themeReducer, initialState);
   const value = {
     theme: state.theme,
-    toggleTheme: () => dispatch({ type: "TOGGLE_THEME" }),
+    toggleTheme: () => dispatch({ type: 'TOGGLE_THEME' }),
   };
 
   return (
