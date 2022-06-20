@@ -51,11 +51,11 @@ function AboutSection() {
               Who are we
             </ParagraphText>
             <SectionTitle className="about__title">
-            “B7 Customs” is a studio of some passionate automotive enthusiasts.
+              Capturing life as it happens
             </SectionTitle>
-            <ParagraphText className="about__desc">          
-            Our goal is to provide quality customer service. We specialize in Vinyl wraps, 
-            Paint Protection films, Car Tints, Car Modifications, Brake Caliper Painting, and Exhaust Systems.
+            <ParagraphText className="about__desc">
+              “B7 Customs” is a studio of some passionate automotive
+              enthusiasts. Our Goal is to provide quality customer service.
             </ParagraphText>
           </div>
         </div>
