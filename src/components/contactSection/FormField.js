@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import themeList from "../../data/themeList";
+import React from 'react';
+import styled from 'styled-components';
+import themeList from '../../data/themeList';
 
 const FieldStyles = styled.div`
   label {
@@ -10,8 +10,7 @@ const FieldStyles = styled.div`
     justify-content: center;
     font-size: 1.6rem;
     text-transform: Capitalize;
-    color: ${({ theme: { theme } }) =>
-      theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_2)"};
+    color: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_2)')};
   }
   input,
   textarea {
@@ -35,7 +34,9 @@ const FieldStyles = styled.div`
   }
 `;
 
-function FormField({ label, id, rows = 1, className, ...rest }) {
+function FormField({
+  label, id, rows = 1, className, ...rest
+}) {
   return (
     <FieldStyles className={className}>
       <label htmlFor={id}>

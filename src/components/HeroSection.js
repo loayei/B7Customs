@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-scroll";
-import styled from "styled-components";
-import HeroImg from "../assets/images/hero.png";
-import PrimaryButton from "./buttons/PrimaryButton";
-import ParagraphText from "./paragraphTexts/ParagraphText";
-import HeroTitle from "./titles/HeroTitle";
+import React from 'react';
+import { Link } from 'react-scroll';
+import styled from 'styled-components';
+import HeroImg from '../assets/images/hero.png';
+import PrimaryButton from './buttons/PrimaryButton';
+import ParagraphText from './paragraphTexts/ParagraphText';
+import HeroTitle from './titles/HeroTitle';
 
 const HeroSectionStyles = styled.div`
   min-height: 100vh;

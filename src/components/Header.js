@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
-import styled from "styled-components";
-import { Link } from "react-scroll";
-import themeList from "../data/themeList";
-import Logo from "./Logo";
-import ThemeSwitcher from "./ThemeSwitcher";
+import React, { useEffect, useRef, useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi';
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import themeList from '../data/themeList';
+import Logo from './Logo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const HeaderStyles = styled.header`
   position: fixed;
@@ -12,10 +12,9 @@ const HeaderStyles = styled.header`
   left: 0;
   width: 100%;
   height: 92px;
-  background-color: ${({ theme: { theme } }) =>
-    theme === themeList.light
-      ? "var(--lightBlue_1)"
-      : "var(--mediumSlateBlue)"};
+  background-color: ${({ theme: { theme } }) => (theme === themeList.light
+    ? 'var(--lightBlue_1)'
+    : 'var(--mediumSlateBlue)')};
   border-bottom: 2px solid var(--mediumSlateBlue);
   .navigation {
     display: flex;
@@ -31,8 +30,7 @@ const HeaderStyles = styled.header`
       font-size: 1.6rem;
       font-weight: 500;
       padding: 0.5rem 1rem;
-      color: ${({ theme: { theme } }) =>
-        theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_1)"};
+      color: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)')};
     }
     &:hover {
       a {
@@ -59,8 +57,7 @@ const HeaderStyles = styled.header`
     margin-left: 10px;
     padding: 3px;
     svg {
-      color: ${({ theme: { theme } }) =>
-        theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_1)"};
+      color: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)')};
     }
     &:hover {
       background-color: #8080803b;
@@ -97,8 +94,7 @@ const HeaderStyles = styled.header`
       max-width: 250px;
       top: 0;
       right: 0;
-      background: ${({ theme: { theme } }) =>
-        theme === themeList.light ? "var(--lightBlue_2)" : "var(--darkBlue_4)"};
+      background: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--lightBlue_2)' : 'var(--darkBlue_4)')};
       height: 100vh;
       z-index: 100;
       transform: translateX(100%);
@@ -125,15 +121,15 @@ export default function Header() {
   const headerRef = useRef(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width: 768px)").matches
+    window.matchMedia('(max-width: 768px)').matches,
   );
 
   useEffect(() => {
     function disableScroll() {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
     function enableScroll() {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     }
 
     if (isNavOpen) {
@@ -144,15 +140,14 @@ export default function Header() {
   }, [isNavOpen]);
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+    window.addEventListener('resize', () => {
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches);
     });
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (headerRef.current && window.scrollY > 100) {
-        headerRef.current.style.boxShadow =
-          "0px 0px 10px 0px rgba(0, 0, 0, 0.5)";
+        headerRef.current.style.boxShadow = '0px 0px 10px 0px rgba(0, 0, 0, 0.5)';
       } else {
-        headerRef.current.style.boxShadow = "none";
+        headerRef.current.style.boxShadow = 'none';
       }
     });
   }, []);
@@ -165,7 +160,7 @@ export default function Header() {
             <Logo />
           </Link>
           <div className="navMenu">
-            <nav className={isMobile && isNavOpen ? "open" : undefined}>
+            <nav className={isMobile && isNavOpen ? 'open' : undefined}>
               {isMobile && (
                 <div
                   className="closeIcon"

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const ButtonsStyles = styled.a`
   display: inline-block;
@@ -19,11 +19,9 @@ const ButtonsStyles = styled.a`
 
 function PrimaryButton({ children, buttonType, ...rest }) {
   return (
-    <>
-      <ButtonsStyles as={buttonType} {...rest}>
-        {children}
-      </ButtonsStyles>
-    </>
+    <ButtonsStyles as={buttonType} {...rest}>
+      {children}
+    </ButtonsStyles>
   );
 }
 
