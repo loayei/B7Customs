@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import ParagraphText from './paragraphTexts/ParagraphText';
-import SectionTitle from './titles/SectionTitle';
-import AboutImg from '../assets/images/about_50.png';
+import React from "react";
+import styled from "styled-components";
+import ParagraphText from "./paragraphTexts/ParagraphText";
+import SectionTitle from "./titles/SectionTitle";
+import AboutImg from "../assets/images/about_50.png";
 
 const AboutStyles = styled.div`
   padding: 10rem 0;
@@ -51,11 +51,13 @@ function AboutSection() {
               Who are we
             </ParagraphText>
             <SectionTitle className="about__title">
-            “B7 Customs” is a studio of some passionate automotive enthusiasts.
+              “B7 Customs” is a studio of some passionate automotive
+              enthusiasts.
             </SectionTitle>
-            <ParagraphText className="about__desc">          
-            Our goal is to provide quality customer service. We specialize in Vinyl wraps, 
-            Paint Protection films, Car Tints, Car Modifications, Brake Caliper Painting, and Exhaust Systems.
+            <ParagraphText className="about__desc">
+              Our goal is to provide quality customer service. We specialize in
+              Vinyl wraps, Paint Protection films, Car Tints, Car Modifications,
+              Brake Caliper Painting, and Exhaust Systems.
             </ParagraphText>
           </div>
         </div>

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import themeList from '../../data/themeList';
-import ParagraphText from '../paragraphTexts/ParagraphText';
+import React from "react";
+import styled from "styled-components";
+import themeList from "../../data/themeList";
+import ParagraphText from "../paragraphTexts/ParagraphText";
 
 const TeamMemberItemStyles = styled.div`
   .teamMember__img {
@@ -14,7 +14,7 @@ const TeamMemberItemStyles = styled.div`
     font-weight: 500;
     font-size: 1.8rem;
     color: ${({ theme: { theme } }) =>
-      theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
+      theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_1)"};
   }
   @media only screen and (max-width: 768px) {
     .teamMember__img {

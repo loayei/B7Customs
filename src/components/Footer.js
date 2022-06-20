@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import styled from 'styled-components';
-import Logo from './Logo';
-import ParagraphText from './paragraphTexts/ParagraphText';
+import React from "react";
+import { Link } from "react-scroll";
+import styled from "styled-components";
+import Logo from "./Logo";
+import ParagraphText from "./paragraphTexts/ParagraphText";
 
 const FooterStyles = styled.footer`
   background-color: var(--mediumSlateBlue);

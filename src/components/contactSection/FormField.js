@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import themeList from '../../data/themeList';
+import React from "react";
+import styled from "styled-components";
+import themeList from "../../data/themeList";
 
 const FieldStyles = styled.div`
   label {
@@ -11,7 +11,7 @@ const FieldStyles = styled.div`
     font-size: 1.6rem;
     text-transform: Capitalize;
     color: ${({ theme: { theme } }) =>
-      theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_2)'};
+      theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_2)"};
   }
   input,
   textarea {

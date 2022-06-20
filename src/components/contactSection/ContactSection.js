@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import PrimaryButton from '../buttons/PrimaryButton';
-import ParagraphText from '../paragraphTexts/ParagraphText';
-import SectionTitle from '../titles/SectionTitle';
-import FormField from './FormField';
+import React from "react";
+import styled from "styled-components";
+import PrimaryButton from "../buttons/PrimaryButton";
+import ParagraphText from "../paragraphTexts/ParagraphText";
+import SectionTitle from "../titles/SectionTitle";
+import FormField from "./FormField";
 
 const ContactSectionStyles = styled.div`
   padding: 10rem 0;
