@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import {
   RiSunFill,
   RiCarFill,
   RiPaintFill,
   RiSettings5Fill,
-} from 'react-icons/ri';
-import SectionTitle from '../titles/SectionTitle';
-import ServiceItem from './ServiceItem';
+} from "react-icons/ri";
+import SectionTitle from "../titles/SectionTitle";
+import ServiceItem from "./ServiceItem";
 
 const ServicesSectionStyles = styled.div`
   padding: 10rem 0;

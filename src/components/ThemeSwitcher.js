@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
-import { FiSun, FiMoon } from 'react-icons/fi';
-import ThemeContext from '../contexts/ThemeContext';
-import themeList from '../data/themeList';
+import React, { useContext } from "react";
+import styled from "styled-components";
+import { FiSun, FiMoon } from "react-icons/fi";
+import ThemeContext from "../contexts/ThemeContext";
+import themeList from "../data/themeList";
 
 const ThemeSwitcherStyles = styled.div`
   label {

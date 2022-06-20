@@ -1,12 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
-import themeList from '../data/themeList';
+import { createGlobalStyle } from "styled-components";
+import themeList from "../data/themeList";
 
 // Typography
-import '@fontsource/poppins';
-import '@fontsource/poppins/500.css';
-import '@fontsource/poppins/600.css';
-import '@fontsource/poppins/700.css';
-import '@fontsource/poppins/800.css';
+import "@fontsource/poppins";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
 
 const GlobalStyles = createGlobalStyle`
 :root{
@@ -28,7 +28,8 @@ html{
   font-size: 10px;
 }
 body{
-  background-color: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--lightBlue_1)' : 'var(--darkBlue_3)')};
+  background-color: ${({ theme: { theme } }) =>
+    theme === themeList.light ? "var(--lightBlue_1)" : "var(--darkBlue_3)"};
   font-family: 'Poppins', sans-serif;
 }
 *, *:before, *:after {

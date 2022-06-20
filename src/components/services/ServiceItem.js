@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import themeList from '../../data/themeList';
-import ParagraphText from '../paragraphTexts/ParagraphText';
+import React from "react";
+import styled from "styled-components";
+import themeList from "../../data/themeList";
+import ParagraphText from "../paragraphTexts/ParagraphText";
 
 const ServiceItemStyles = styled.div`
   text-align: left;
@@ -29,7 +29,8 @@ const ServiceItemStyles = styled.div`
     line-height: 1.5em;
     text-transform: capitalize;
     margin-bottom: 1rem;
-    color: ${({ theme: { theme } }) => (theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)')};
+    color: ${({ theme: { theme } }) =>
+      theme === themeList.light ? "var(--darkBlue_2)" : "var(--lightBlue_1)"};
   }
   &:hover {
     background-color: var(--mediumSlateBlue);

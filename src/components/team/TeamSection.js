@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import ParagraphText from '../paragraphTexts/ParagraphText';
-import SectionTitle from '../titles/SectionTitle';
-import TeamMemberItem from './TeamMemberItem';
+import React from "react";
+import styled from "styled-components";
+import ParagraphText from "../paragraphTexts/ParagraphText";
+import SectionTitle from "../titles/SectionTitle";
+import TeamMemberItem from "./TeamMemberItem";
 // team member images
-import teamMember1 from '../../assets/images/team4.png';
-import teamMember2 from '../../assets/images/team2.png';
-import teamMember3 from '../../assets/images/team3.png';
-import teamMember4 from '../../assets/images/team1.png';
+import teamMember1 from "../../assets/images/team4.png";
+import teamMember2 from "../../assets/images/team2.png";
+import teamMember3 from "../../assets/images/team3.png";
+import teamMember4 from "../../assets/images/team1.png";
 
 const TeamSectionStyles = styled.div`
   padding: 10rem 0;
